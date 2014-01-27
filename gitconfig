@@ -1,0 +1,12 @@
+[user]
+	name = Tom White
+	email = tom@cloudera.com
+[credential]
+	helper = osxkeychain
+[core]
+	autocrlf = input
+	excludesfile = /Users/tom/.gitignore_global
+[alias]
+	fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+	squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+	ri = rebase --interactive --autosquash
