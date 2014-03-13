@@ -26,9 +26,9 @@ alias sd='svn diff'
 
 alias grp='grep -rI --color'
 
-alias mvns='mvn -DskipTests -Dmaven.javadoc.skip'
+alias mvns='mvn -DskipTests -Dmaven.javadoc.skip -Dfindbugs.skip=true'
 
-alias avro="java -jar $HOME/sw/avro-1.7.4/avro-tools-*.jar"
+alias avro="java -jar $HOME/sw/avro-1.7.6/avro-tools-*.jar"
 
 # Java configuration
 
@@ -87,7 +87,7 @@ fi
 
 export VISUAL=vi
 
-export PATH=$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.1.1/bin
+export PATH=$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.0.4/bin
 
 
 
