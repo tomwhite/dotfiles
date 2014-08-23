@@ -47,7 +47,7 @@ use-java7() {
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 }
 
-use-java6
+use-java7
 
 export _JAVA_OPTIONS=-Djava.awt.headless=true
 
@@ -55,7 +55,7 @@ export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=128m -Dmaven.artifact.thre
 
 SW=$HOME/sw
 
-export SCALA_HOME=$SW/scala-2.10.1
+export SCALA_HOME=$SW/scala-2.10.4
 
 # Hadoop dev
 export JAVA5_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home/
@@ -87,7 +87,7 @@ fi
 
 export VISUAL=vi
 
-export PATH=$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.0.4/bin
+export PATH=$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.0.4/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin
 
 
 
