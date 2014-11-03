@@ -47,11 +47,15 @@ use-java7() {
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 }
 
+use-java8() {
+    export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+}
+
 use-java7
 
 export _JAVA_OPTIONS=-Djava.awt.headless=true
 
-export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=128m -Dmaven.artifact.threads=5 -Duser.language=en -Duser.country=US -Duser.timezone=PST"
+export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=256m -Dmaven.artifact.threads=5 -Duser.language=en -Duser.country=US -Duser.timezone=PST"
 
 SW=$HOME/sw
 
@@ -87,7 +91,7 @@ fi
 
 export VISUAL=vi
 
-export PATH=$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.0.4/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin
+export PATH=$SW/protobuf-2.5.0/build/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.0.4/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin
 
 
 
