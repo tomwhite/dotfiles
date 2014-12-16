@@ -80,6 +80,12 @@ fi
 # http://stackoverflow.com/questions/7134723/hadoop-on-osx-unable-to-load-realm-info-from-scdynamicstore
 export HADOOP_OPTS="-Djava.security.krb5.realm= -Djava.security.krb5.kdc="
 
+# Docker
+# http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide
+docker-ip() {
+  boot2docker ip 2> /dev/null
+}
+
 # http://blog.vogella.com/2013/03/19/git-auto-completion-for-the-bash-shell/
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
