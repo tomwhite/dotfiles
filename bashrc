@@ -55,7 +55,7 @@ use-java7
 
 export _JAVA_OPTIONS=-Djava.awt.headless=true
 
-export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=256m -Dmaven.artifact.threads=5 -Duser.language=en -Duser.country=US -Duser.timezone=PST"
+export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=256m -Dmaven.artifact.threads=5 -Duser.language=en -Duser.country=US -Duser.timezone=PST -Dhttps.protocols=TLSv1"
 
 SW=$HOME/sw
 
