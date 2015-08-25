@@ -30,6 +30,8 @@ alias mvns='mvn -DskipTests -Dmaven.javadoc.skip -Dfindbugs.skip=true'
 
 alias avro="java -jar $HOME/sw/avro-1.7.6/avro-tools-*.jar"
 
+alias sshe="ssh -i ~/.ec2/cloudera/tom.pem -l ec2-user"
+
 # Java configuration
 
 # http://superuser.com/questions/490425/how-do-i-switch-between-java-7-and-java-6-on-os-x-10-8-2
@@ -97,7 +99,10 @@ fi
 
 export VISUAL=vi
 
-export PATH=$SW/protobuf-2.5.0/build/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.0.4/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin
+export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.1.1/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.2.1/bin
 
 
 
+
+# added by travis gem
+[ -f /Users/tom/.travis/travis.sh ] && source /Users/tom/.travis/travis.sh
