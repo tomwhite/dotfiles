@@ -61,7 +61,7 @@ export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=256m -Dmaven.artifact.thre
 
 SW=$HOME/sw
 
-export SCALA_HOME=$SW/scala-2.10.4
+export SCALA_HOME=$SW/scala-2.11.6
 
 # Hadoop dev
 export JAVA5_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home/
@@ -99,7 +99,7 @@ fi
 
 export VISUAL=vi
 
-export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.1.1/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.2.1/bin
+export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.1.1/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.7/bin
 
 
 
