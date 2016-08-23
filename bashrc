@@ -53,7 +53,7 @@ use-java8() {
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 }
 
-use-java7
+use-java8
 
 export _JAVA_OPTIONS=-Djava.awt.headless=true
 
@@ -99,7 +99,7 @@ fi
 
 export VISUAL=vi
 
-export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.1.1/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.7/bin
+export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.1.1/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.13/bin
 
 
 
