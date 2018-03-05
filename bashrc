@@ -97,9 +97,14 @@ if [ -f ~/cloudera/bashrc ]; then
     . ~/cloudera/bashrc
 fi
 
+# GATK bash completion
+if [ -f ~/workspace/gatk/build/docs/tabCompletion/gatk-launch-completion.sh ]; then
+    . ~/workspace/gatk/build/docs/tabCompletion/gatk-launch-completion.sh
+fi
+
 export VISUAL=vi
 
-export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.1.1/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.13/bin
+export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.3.9/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.13/bin
 
 
 
