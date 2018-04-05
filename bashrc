@@ -32,6 +32,8 @@ alias avro="java -jar $HOME/sw/avro-1.7.6/avro-tools-*.jar"
 
 alias sshe="ssh -i ~/.ec2/cloudera/tom.pem -l ec2-user"
 
+alias mate='/Applications/TextMate.app/Contents/SharedSupport/Support/bin/mate'
+
 # Java configuration
 
 # http://superuser.com/questions/490425/how-do-i-switch-between-java-7-and-java-6-on-os-x-10-8-2
