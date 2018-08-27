@@ -1,6 +1,6 @@
 [user]
 	name = Tom White
-	email = tom@cloudera.com
+	email = tom.e.white@gmail.com
 [credential]
 	helper = osxkeychain
 [core]
@@ -17,3 +17,6 @@
 	smudge = git-lfs smudge -- %f
 	required = true
 	process = git-lfs filter-process
+
+[diff]
+        submodule = diff
