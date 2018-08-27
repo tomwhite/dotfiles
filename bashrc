@@ -30,9 +30,9 @@ alias mvns='mvn -DskipTests -Dmaven.javadoc.skip -Dfindbugs.skip=true'
 
 alias avro="java -jar $HOME/sw/avro-1.7.6/avro-tools-*.jar"
 
-alias sshe="ssh -i ~/.ec2/cloudera/tom.pem -l ec2-user"
-
 alias mate='/Applications/TextMate.app/Contents/SharedSupport/Support/bin/mate'
+
+tail-last() { tail -f $(ls -1t $1/* | sed q); }
 
 # Java configuration
 
@@ -59,7 +59,7 @@ use-java8
 
 export _JAVA_OPTIONS=-Djava.awt.headless=true
 
-export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=256m -Dmaven.artifact.threads=5 -Duser.language=en -Duser.country=US -Duser.timezone=PST -Dhttps.protocols=TLSv1"
+export MAVEN_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=256m -Dmaven.artifact.threads=5 -Duser.language=en -Duser.country=US -Duser.timezone=PST"
 
 SW=$HOME/sw
 
@@ -95,18 +95,9 @@ if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
 
-if [ -f ~/cloudera/bashrc ]; then
-    . ~/cloudera/bashrc
-fi
-
-# GATK bash completion
-if [ -f ~/workspace/gatk/build/docs/tabCompletion/gatk-launch-completion.sh ]; then
-    . ~/workspace/gatk/build/docs/tabCompletion/gatk-launch-completion.sh
-fi
-
 export VISUAL=vi
 
-export PATH=$SW/protobuf-2.5.0/build/bin:/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$EC2_HOME/bin:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.3.9/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.13/bin
+export PATH=/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.3.9/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.13/bin
 
 
 
