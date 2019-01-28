@@ -55,6 +55,10 @@ use-java8() {
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 }
 
+use-java11() {
+    export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+}
+
 use-java8
 
 export _JAVA_OPTIONS=-Djava.awt.headless=true
