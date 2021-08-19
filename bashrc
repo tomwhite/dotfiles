@@ -101,7 +101,7 @@ fi
 
 export VISUAL=vi
 
-export PATH=/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:$SW/android-sdk-mac_x86/tools:$SW/android-sdk-mac_x86/platform-tools:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.6.0/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.13/bin
+export PATH=/usr/local/bin:$PATH:$HOME/workspace/bin-scripts:/usr/local/mysql/bin:$SCALA_HOME/bin:$SW/apache-maven-3.6.0/bin:$SW/apache-ant-1.9.3/bin:$SW/sbt/bin:$SW/gradle-2.13/bin:$SW/bcftools-1.10.2/bin:$SW/htslib-1.10.2/bin
 
 
 
